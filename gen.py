@@ -3,6 +3,7 @@
 import htb
 import dotenv
 import os
+import sys
 from pathlib import Path
 import shutil
 import getpass
@@ -48,7 +49,7 @@ def gen_rep(scans, info):
 
 
 def main():
-    info = get_vars('304')
+    info = get_vars(sys.argv[-1])
     scans = gen_dirs(info['name'])
     gen_rep(scans, info)
 
