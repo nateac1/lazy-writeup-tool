@@ -1,12 +1,11 @@
 #!/usr/bin/env python3
 
-import htb
+import htb  # Just pip install this bad boy
 import dotenv
 import os
 import sys
 from pathlib import Path
 import shutil
-import getpass
 
 API_KEY = dotenv.get_key('.env','API_KEY')
 HTB_DIR = dotenv.get_key('.env','HTB_DIR')
